@@ -1,7 +1,7 @@
-antiSMASH web UI (bacterial)
+antiSMASH web UI (fungal)
 ============================
 
-A web UI for the bacterial version of antiSMASH.
+A web UI for the fungal version of antiSMASH.
 
 License
 -------
