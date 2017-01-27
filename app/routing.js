@@ -27,10 +27,6 @@ angular.module('antismash.ui.bacterial.routing', [
         },
         controllerAs: 'ctrl'
       }).
-      state('download', {
-        url: '/download',
-        templateUrl: 'download/download.html'
-      }).
       state('about', {
         url: '/about',
         templateUrl: 'about/about.html'
