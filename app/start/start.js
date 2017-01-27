@@ -15,9 +15,8 @@ angular.module('antismash.ui.bacterial.as_start', ['ngFileUpload'])
                 { id: 'subclusterblast', description: 'SubClusterBlast', default: true },
                 { id: 'smcogs', description: 'smCoG analysis', default: true },
                 { id: 'asf', description: 'ActiveSiteFinder', default: true },
-                { id: 'tta', description: 'Detect TTA codons', default: false },
-                { id: 'transatpks_da', description: 'Align Trans-AT PKS domains', default: false },
                 { id: 'fullhmmer', description: 'Whole-genome PFAM analysis', default: false },
+                { id: 'cassis', description: 'Cluster-border prediction based on transcription factor binding sites (CASSIS)', default: false},
             ];
 
             for (var i = 0; i < vm.extra_features.length; i++) {
