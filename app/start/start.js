@@ -89,7 +89,7 @@ angular.module('antismash.ui.bacterial.as_start', ['ngFileUpload'])
 
             vm.loadSampleInput = function () {
                 vm.upload_file = false;
-                vm.ncbi = "Y16952";
+                vm.ncbi = "NC_007194";
             }
 
             vm.openSampleOutput = function () {
