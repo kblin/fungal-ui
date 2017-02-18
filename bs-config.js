@@ -11,7 +11,7 @@ module.exports = {
     },
     middleware: {
       1: proxyMiddleware('/api', {
-        target: 'http://localhost:5000',
+        target: 'http://localhost:5001',
       changeOrigin: true   // for vhosted sites, changes host header to match to target's host
       })
     }
