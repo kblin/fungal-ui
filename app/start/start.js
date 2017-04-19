@@ -51,6 +51,10 @@ angular.module('antismash.ui.bacterial.as_start', ['ngFileUpload'])
                     vm.submission.cf_npfams = vm.cf_npfams;
                 }
 
+                if (vm.borderpredict) {
+                    vm.submission.borderpredict = true;
+                }
+
                 Upload.upload({
                     url: '/api/v1.0/submit',
                     data: vm.submission,
