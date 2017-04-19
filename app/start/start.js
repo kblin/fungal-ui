@@ -6,6 +6,7 @@ angular.module('antismash.ui.bacterial.as_start', ['ngFileUpload'])
             var vm = this;
 
             vm.valid_endings = '.gbk,.gb,.gbff,.emb,.embl,.fa,.fasta,.fna';
+            vm.valid_gff_endings = '.gff,.gff3';
 
             // Defaullt values
             vm.submission = {};
@@ -31,6 +32,9 @@ angular.module('antismash.ui.bacterial.as_start', ['ngFileUpload'])
 
                 if (vm.upload_file) {
                     vm.submission.seq = vm.file;
+                    if (vm.gff_file) {
+                        vm.submission.gff3 = vm.gff_file;
+                    }
                 } else {
                     vm.submission.ncbi = vm.ncbi;
                 }
@@ -90,6 +94,10 @@ angular.module('antismash.ui.bacterial.as_start', ['ngFileUpload'])
             }
 
             vm.showGffInput = function () {
+                return vm.showGeneFinder();
+            }
+
+            vm.showGeneFinder = function () {
                 if (!vm.upload_file) {
                     return false;
                 }
